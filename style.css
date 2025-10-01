@@ -1,0 +1,88 @@
+body {
+    background-color: #11111b;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    color: #b7bdf8;
+    font-size: 58px;
+    text-align: center;
+    text-shadow: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3 {
+    color: #b7bdf8;
+    font-family: fantasy;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Textos */
+p {
+    font-size: 15px;
+    text-align: justify;
+    color: #b8c0e0;
+    font-family: fantasy;
+}
+
+ul {
+    color: #b8c0e0;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+ol {
+    color: #f0c6c6;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 14px;
+    list-style-type: none;
+}
+/*links */
+a {
+    text-decoration: none;
+    color: #cba6f7;
+    
+}
+
+.AetheriumGate {
+    color: #cdd6f4;
+    font-size: 58px;
+    text-align: center;
+    text-shadow: white;
+    box-shadow: 0 4px 8px rgba(90, 36, 107, 0.2);
+
+}
+
+.colunas1 {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    /* OPCIONAL: Remove o padding padrão do <ul> */
+    padding: 0;
+}
+
+.lista-em-colunas li {
+    width: 200px;
+}
+
+.borda1 {
+    background-color: #11111b;
+    width: 250px;
+    height: 400px;
+    padding: 10px;
+    margin: 2px;
+    margin-bottom: 2px;
+    box-shadow: 0 4px 8px rgba(90, 36, 107, 0.2);
+    border: 1px solid #1e1e2e;
+}
