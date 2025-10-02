@@ -11,9 +11,7 @@ body {
 }
 
 .espacox {
-    margin-right: 30%;
-    margin-left: 28%;
-    text-align: center;
+    text-align: justify;
 }
 
 h1 {
@@ -142,8 +140,10 @@ a {
 }
 
 .img02 {
-    height: 600px;
-    width: 450px;
+    height: 250px;
+    width: 200px;
+    float: right;
+
 
 }
 
@@ -168,7 +168,9 @@ a {
 }
 
 .video {
-    
+    float: left;
+    margin-left: 18%;
+
 }
 /* Estilo Básico do Cabeçalho (Header) */
 header {
@@ -223,3 +225,24 @@ header {
     background-color: #8aadf4; /* Cor mais escura ao passar o mouse */
 }
 
+
+
+.container-principal {
+    display: flex; /* Transforma o container em um flex container */
+    justify-content: center; /* Distribui o espaço uniformemente entre os itens */
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+.coluna-central-texto {
+    /* Define a largura para dar espaço ao texto */
+    width: 20%; /* Ajuste a porcentagem conforme necessário */
+    text-align: justify; /* Centraliza o texto horizontalmente dentro da coluna */
+    margin: 0 10px; /* Adiciona margem lateral para afastar do vídeo e da imagem */
+    /* Adicione padding ou altura se for usar align-items: center */
+}
+
+.textod {
+    text-align: justify;
+    font-size: 17px;
+}
