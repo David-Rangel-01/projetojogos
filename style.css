@@ -143,8 +143,34 @@ a {
     height: 250px;
     width: 200px;
     float: right;
+    background-color: #1e2030;
+    padding: 1px;
+    margin: 2px;
+    margin-bottom: 1px;
+    box-shadow: 0 4px 8px rgba(90, 36, 107, 0.2);
+    border: 1px solid #1e1e2e;
+    border-radius: 6px;
 
 
+}
+
+.img03 {
+    height: 215px;
+    width: 800px;
+    float: top;
+    background-color: #1e2030;
+    padding: 1px;
+    margin: 2px;
+    margin-bottom: 1px;
+    box-shadow: 0 4px 8px rgba(90, 36, 107, 0.2);
+    border: 1px solid #1e1e2e;
+    border-radius: 6px;
+    opacity: 0.8;
+    overflow: hidden; 
+    cursor: pointer;
+    transform: scale(1.03);
+    transform: 0.3s ease-in-out;
+    box-shadow: 0.3s ease-in-out;
 }
 
 .banner {
@@ -245,4 +271,71 @@ header {
 .textod {
     text-align: justify;
     font-size: 17px;
+}
+
+
+.borda4 {
+    background-color: #1e2030;
+    width: 452px;
+    height: 262px;
+    padding: 1px;
+    margin: 2px;
+    margin-bottom: 1px;
+    box-shadow: 0 4px 8px rgba(90, 36, 107, 0.2);
+    border: 1px solid #1e1e2e;
+    border-radius: 15px;
+}
+
+.borda5 {
+    background-color: #1e2030;
+    width: 251px;
+    height: 201px;
+    padding: 1px;
+    margin: 2px;
+    margin-bottom: 1px;
+    box-shadow: 0 4px 8px rgba(90, 36, 107, 0.2);
+    border: 1px solid #1e1e2e;
+    border-radius: 15px;
+
+}
+
+
+/* ------------------------------------- */
+/* 1. Contêiner (Máscara) */
+/* ------------------------------------- */
+.banner-container {
+    width: 100%; /* Largura total do elemento pai */
+    max-width: 900px; /* Ajuste para o tamanho máximo desejado */
+    height: 300px; /* Altura fixa do banner */
+    margin: 20px auto; /* Centraliza */
+    border-radius: 10px;
+    overflow: hidden; /* ESSENCIAL: Esconde o excesso da imagem durante o zoom */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* ------------------------------------- */
+/* 2. Imagem (A que será Movida) */
+/* ------------------------------------- */
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    display: block;
+    
+    /* ESSENCIAL: Transição suave para o efeito de movimento */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* ------------------------------------- */
+/* 3. O EFEITO HOVER */
+/* ------------------------------------- */
+.banner-container:hover .banner-image {
+    /* Aplica o zoom sutil (1.05 = 5% maior) */
+    transform: scale(1.05);
+}
+
+.banner-container:hover {
+    /* Opcional: Aumenta sutilmente a sombra do contêiner para acompanhar o zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
