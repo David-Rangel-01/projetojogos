@@ -136,7 +136,7 @@ a {
               0 0 10px rgba(190, 150, 255, 0.6); 
      z-index: 10;
      transform: translateY(-5px);
-     opacity: 0.7; /* Ajuste a opacidade de 0 (totalmente transparente) a 1 (totalmente opaco) */
+     opacity: 0.7; 
      object-fit: cover;
 }
 
@@ -201,74 +201,74 @@ a {
     margin-left: 18%;
 
 }
-/* Estilo Básico do Cabeçalho (Header) */
+
 header {
-    background-color: #181926; /* Cor de fundo da barra superior */
+    background-color: #181926; 
     padding: 5px 10px;
-    display: flex; /* Para alinhar itens como logo, menu e barra de pesquisa */
+    display: flex; 
     align-items: center;
-    justify-content: flex-end; /* Coloca o formulário mais para a direita, por exemplo */
+    justify-content: flex-end; 
     width: 100%;
-    box-sizing: border-box; /* Para que o padding não aumente a largura total */
+    box-sizing: border-box; 
 }
 
-/* Estilo do Formulário de Pesquisa */
+
 .search-bar {
     display: flex;
-    border-radius: 5px; /* Borda arredondada */
-    overflow: hidden; /* Garante que o input e o botão fiquem dentro da borda */
-    background-color: #181926; /* Fundo branco ou claro para o campo */
+    border-radius: 5px; 
+    overflow: hidden; 
+    background-color: #181926; 
 }
 
-/* Estilo do Campo de Texto (Input) */
+
 .search-bar input[type="text"] {
-    padding: 8px 15px;
+    padding: 8px 10px;
     border: none;
-    outline: none; /* Remove a borda padrão ao focar */
-    font-size: 16px;
-    flex-grow: 1; /* Permite que o input preencha o espaço */
-    min-width: 150px; /* Largura mínima para o campo */
+    outline: none; 
+    font-size: 12px;
+    flex-grow: 1; 
+    min-width: 120px;
 }
 
-/* Estilo do Placeholder (o texto "Pesquisar...") */
+
 .search-bar input[type="text"]::placeholder {
     color: #999;
 }
 
-/* Estilo do Botão de Busca */
+
 .search-bar button {
-    background-color: #1e2030; /* Cor do botão (ex: azul) */
+    background-color: #1e2030; 
     color: #5b6078;
     border: none;
-    padding: 8px 12px;
+    padding: 8px 10px;
     cursor: pointer;
-    font-size: 18px; /* Tamanho do ícone */
+    font-size: 12px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s; /* Transição suave na cor */
+    transition: background-color 0.3s; 
 }
 
-/* Efeito ao passar o mouse (Hover) */
+
 .search-bar button:hover {
-    background-color: #8aadf4; /* Cor mais escura ao passar o mouse */
+    background-color: #8aadf4; 
 }
 
 
 
 .container-principal {
-    display: flex; /* Transforma o container em um flex container */
-    justify-content: center; /* Distribui o espaço uniformemente entre os itens */
+    display: flex; 
+    justify-content: center; 
     align-items: flex-start; 
     gap: 20px;
 }
 
 .coluna-central-texto {
-    /* Define a largura para dar espaço ao texto */
-    width: 20%; /* Ajuste a porcentagem conforme necessário */
-    text-align: justify; /* Centraliza o texto horizontalmente dentro da coluna */
-    margin: 0 10px; /* Adiciona margem lateral para afastar do vídeo e da imagem */
-    /* Adicione padding ou altura se for usar align-items: center */
+    
+    width: 20%; 
+    text-align: justify; 
+    margin: 0 10px; 
+    
 }
 
 .textod {
@@ -303,42 +303,38 @@ header {
 }
 
 
-/* ------------------------------------- */
-/* 1. Contêiner (Máscara) */
-/* ------------------------------------- */
+
 .banner-container {
-    width: 100%; /* Largura total do elemento pai */
-    max-width: 900px; /* Ajuste para o tamanho máximo desejado */
-    height: 300px; /* Altura fixa do banner */
-    margin: 20px auto; /* Centraliza */
+    width: 100%; 
+    max-width: 900px; 
+    height: 300px; 
+    margin: 20px auto; 
     border-radius: 10px;
-    overflow: hidden; /* ESSENCIAL: Esconde o excesso da imagem durante o zoom */
+    overflow: hidden; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
-/* ------------------------------------- */
-/* 2. Imagem (A que será Movida) */
-/* ------------------------------------- */
+
+
+
 .banner-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    object-fit: cover; 
     display: block;
     
-    /* ESSENCIAL: Transição suave para o efeito de movimento */
+
     transition: transform 0.5s ease-in-out;
 }
 
-/* ------------------------------------- */
-/* 3. O EFEITO HOVER */
-/* ------------------------------------- */
+
 .banner-container:hover .banner-image {
-    /* Aplica o zoom sutil (1.05 = 5% maior) */
+
     transform: scale(1.05);
 }
 
 .banner-container:hover {
-    /* Opcional: Aumenta sutilmente a sombra do contêiner para acompanhar o zoom */
+
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
